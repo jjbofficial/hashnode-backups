@@ -5,7 +5,7 @@ Once I started trying to follow online tutorials to build electronic projects, I
 * [Okuelectronics](https://okuelectronics.com)
 * [Geekelectronics](https://geekelectronics.io)
 * [InventElectronics](https://www.inventelectronics.com)
-* [Nauvitel](https://nauvitel.com)
+* [Nauvitel Electronics](https://nauvitel.com)
 
 Although the shops above usually had the parts that I needed, I sometimes had to buy some parts from outside Ghana especially when I wanted to work on projects that used surface mount components. The main thing I looked for was cheap shipping since I don't buy in high volume and the site delivers products to Ghana. I found two sites that work for me
 
