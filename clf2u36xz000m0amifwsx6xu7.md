@@ -64,7 +64,7 @@ The code worked well locally, but I started thinking about how to run the comman
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1677679339694/957093ed-2735-4438-9808-366d6ded252a.png align="center")
 
-The issue is that the command runs an infinite loop, causing the function to never return. Consequently, the scheduler creates multiple processes, all subscribed to the same topic. The code that runs when new data is received (e.g., storing the data in a database) will be executed multiple times, with the exact number depending on the number of processes created. To solve this problem, you can use a process monitor, such as [supervisor](http://supervisord.org/)), to run the command in the background and restart it if it crashes. I copied the configuration example for running the queue worker command from the [Laravel documentation](https://laravel.com/docs/10.x/queues#configuring-supervisor) and edited it as follows:
+The issue is that the command runs an infinite loop, causing the function to never return. Consequently, the scheduler creates multiple processes, all subscribed to the same topic. The code that runs when new data is received (e.g., storing the data in a database) will be executed multiple times, with the exact number depending on the number of processes created. To solve this problem, you can use a process monitor, such as [supervisor](http://supervisord.org/), to run the command in the background and restart it if it crashes. I copied the configuration example for running the queue worker command from the [Laravel documentation](https://laravel.com/docs/10.x/queues#configuring-supervisor) and edited it as follows:
 
 ```plaintext
 [program:laravel-mqtt-subscriber]
