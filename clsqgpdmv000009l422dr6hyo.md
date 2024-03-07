@@ -98,4 +98,4 @@ Before connecting to IoT Core over MQTT, we must create a policy and a `thing`.
     You must download the device certificates at this step. You will not be able to download them after you close the pop-up.
     
 
-In Part 2, I will go over how you can use the device certificates to connect to AWS IoT core over MQTT.
+In Part 2, I go over how to use the device certificates to connect a laravel application to AWS IoT core over MQTT.
